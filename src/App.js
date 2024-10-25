@@ -1,6 +1,7 @@
 import { useState } from "react";
 import BillGrab from "./components/BillGrab";
 import CustomBill from "./components/CustomBill";
+import PartyBill from "./components/PartyBill";
 import "./App.css";
 
 function App({ data }) {
@@ -12,6 +13,8 @@ function App({ data }) {
         return <BillGrab data={data} />;
       case "B":
         return <CustomBill data={data} />;
+      case "C":
+        return <PartyBill data={data} />;
       default:
         return null;
     }
@@ -39,6 +42,15 @@ function App({ data }) {
               onChange={() => setSelectedComponent("B")}
             />
             Bill Tự chọn
+          </label>
+          <label>
+            <input
+              type="radio"
+              value="B"
+              checked={selectedComponent === "C"}
+              onChange={() => setSelectedComponent("C")}
+            />
+            Party Bill
           </label>
         </div>
       </div>
