@@ -121,7 +121,7 @@ function CustomBill({ data }) {
 
   return (
     <div className="container py-40">
-      <div>
+      <div className="px-16">
         <div className="flex gap-16 flex-wrap flex-justify-between">
           <div className="flex flex-1 flex-column gap-10">
             <label className="flex flex-justify-between">

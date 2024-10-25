@@ -19,26 +19,28 @@ function App({ data }) {
 
   return (
     <>
-      <div>
+      <div className="px-16">
         <h3>Chọn loại bill cần tính</h3>
-        <label>
-          <input
-            type="radio"
-            value="A"
-            checked={selectedComponent === "A"}
-            onChange={() => setSelectedComponent("A")}
-          />
-          Bill Grab
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="B"
-            checked={selectedComponent === "B"}
-            onChange={() => setSelectedComponent("B")}
-          />
-          Bill Tự chọn
-        </label>
+        <div className="flex gap-16">
+          <label>
+            <input
+              type="radio"
+              value="A"
+              checked={selectedComponent === "A"}
+              onChange={() => setSelectedComponent("A")}
+            />
+            Bill Grab
+          </label>
+          <label>
+            <input
+              type="radio"
+              value="B"
+              checked={selectedComponent === "B"}
+              onChange={() => setSelectedComponent("B")}
+            />
+            Bill Tự chọn
+          </label>
+        </div>
       </div>
       <div>{renderComponent()}</div>
     </>
