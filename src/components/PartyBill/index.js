@@ -114,7 +114,7 @@ function PartyBill({ data }) {
         <div className="flex gap-16 flex-wrap flex-justify-between">
           <div className="flex flex-1 flex-column gap-10">
             <label className="flex flex-justify-between">
-              Tổng giá món ăn:{" "}
+              Tổng giá bửa tiệc:{" "}
               <input
                 className="flex-input-60"
                 type="text"
